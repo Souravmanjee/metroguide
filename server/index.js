@@ -4,6 +4,10 @@ const addstations=require ('./routes/addstations')
 
 const gettingstations=require('./routes/getallstations')
 
+const nearbylocation=require('./routes/addnearby')
+
+const getnearby=require('./routes/getnearby')
+
 
 
 
@@ -22,6 +26,10 @@ app.use(server.json());
 app.use('/api',addstations);  // api is middlepoint
 
 app.use('/api',gettingstations);
+
+app.use('/api',nearbylocation);
+
+app.use('/api',getnearby);
 
 
 
