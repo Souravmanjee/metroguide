@@ -8,7 +8,9 @@ const nearbylocation=require('./routes/addnearby')
 
 const getnearby=require('./routes/getnearby')
 
+const addconnection=require('./routes/addconnection')
 
+const getconnection=require('./routes/getconnection')
 
 
 
@@ -30,6 +32,10 @@ app.use('/api',gettingstations);
 app.use('/api',nearbylocation);
 
 app.use('/api',getnearby);
+
+app.use('/api',addconnection);
+
+app.use('/api', getconnection);
 
 
 
