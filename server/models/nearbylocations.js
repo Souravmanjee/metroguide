@@ -13,5 +13,5 @@ const n = new nearby.Schema({
     
 
 })
-const nl = new nearby.model("Description",n);
+const nl = new nearby.model("nearbylocations",n);
 module.exports=nl;
