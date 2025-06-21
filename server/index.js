@@ -12,19 +12,19 @@ const addconnection=require('./routes/addconnection')
 
 const getconnection=require('./routes/getconnection')
 
-
+const findpath=require('./routes/findpath')
 
 
 const app= server()
 
-//middleware
+// //middleware
 app.use(server.json());
 
 
 
 
 
-//api
+// //api
 app.use('/api',addstations);  // api is middlepoint
 
 app.use('/api',gettingstations);
@@ -37,14 +37,14 @@ app.use('/api',addconnection);
 
 app.use('/api', getconnection);
 
+app.use('/api',findpath);
 
 
 
 
 
 
-
-//  connection to mongoDB
+// //  connection to mongoDB
 
 require ("./conn/conn")
 const serverstart =()=>{
