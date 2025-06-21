@@ -2,7 +2,8 @@ const db = require ('mongoose')
 
 const usr = new db.Schema({
     stations:{
-        type:String
+        type:String,
+        unique:true
     },
     linecolor:{
         type:String

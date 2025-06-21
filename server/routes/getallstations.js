@@ -1,6 +1,6 @@
 
 const stations = require('../models/stations')
-const server = require ('express')
+const server = require ('express')  //  express ke under hi listen, GET , POST, PUT hota h isliye isko require krte h
 const app= server()
 
 
