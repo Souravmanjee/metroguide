@@ -20,8 +20,8 @@ async function apicall(req, res) {
         }
         
 
-        dijkstra(data,stationlist,mapdata);
-        res.json(stationlist); // send only the 2D array if needed
+        let path = dijkstra(data,stationlist,mapdata.distancemap);
+        res.json(path); 
     } catch (err) {
         console.error("Error in /findpath:", err);
         res.status(500).json({ error: "Internal server error" });
@@ -39,8 +39,9 @@ function dijkstra(data, stations, mapp) {
     const previous = Array(n).fill(null);
 
     // Convert station names to indices
-    const startIndex = stations.indexOf(data.source);
-    const endIndex = stations.indexOf(data.destination);
+    const startIndex = stations.findIndex(s => s.stations === data.source);
+    const endIndex = stations.findIndex(s => s.stations === data.destination);
+
 
     distances[startIndex] = 0;
 
@@ -54,8 +55,9 @@ function dijkstra(data, stations, mapp) {
 
         if (u === -1 || distances[u] === Infinity) break; // All reachable nodes have been visited
         visited[u] = true;
-
+        console.log(mapp)
         for (let v = 0; v < n; v++) {
+            
             if (mapp[u][v] && !visited[v]) {
                 const alt = distances[u] + mapp[u][v];
                 if (alt < distances[v]) {
@@ -85,120 +87,4 @@ function dijkstra(data, stations, mapp) {
 
     return patth;
 }
-
-
 module.exports = app;
-
-
-
-
-
-
-
-
-//dijkstra
-
-
-// const express = require('express');
-// const station = require('../models/stations');
-// const map = require('../models/map');
-// const ShortestPath = require('../models/shortestpath'); // Create this model
-// const router = express.Router();
-
-// router.get('/shortestpath', async (req, res) => {
-//     const { source, destination } = req.query;
-
-//     try {
-//         const stations = await station.find();
-//         const sourceIndex = stations.findIndex(s => s.stations === source);
-//         const destIndex = destination ? stations.findIndex(s => s.stations === destination) : null;
-
-//         if (sourceIndex === -1 || (destination && destIndex === -1)) {
-//             return res.status(400).json({ error: 'Invalid station name' });
-//         }
-
-//         const mapData = await map.findOne(); // You can use findById if you store by specific ID
-//         const matrix = mapData.distancemap;
-
-//         const { dist, prev } = dijkstra(matrix, sourceIndex);
-
-//         if (destination) {
-//             const pathIndices = getPath(prev, sourceIndex, destIndex);
-//             const pathStations = pathIndices.map(i => stations[i].stations);
-
-//             // Store the result
-//             const record = new ShortestPath({
-//                 source,
-//                 destination,
-//                 path: pathStations,
-//                 distance: dist[destIndex]
-//             });
-//             await record.save();
-
-//             return res.json({
-//                 distance: dist[destIndex],
-//                 path: pathStations
-//             });
-//         } else {
-//             // Return all shortest paths from the source
-//             const allPaths = stations.map((_, idx) => ({
-//                 destination: stations[idx].stations,
-//                 distance: dist[idx],
-//                 path: getPath(prev, sourceIndex, idx).map(i => stations[i].stations)
-//             }));
-
-//             return res.json({
-//                 source,
-//                 paths: allPaths
-//             });
-//         }
-//     } catch (err) {
-//         res.status(500).json({ error: err.message });
-//     }
-// });
-
-// // Dijkstra Algorithm
-// function dijkstra(matrix, startIndex) {
-//     const n = matrix.length;
-//     const dist = Array(n).fill(Infinity);
-//     const visited = Array(n).fill(false);
-//     const prev = Array(n).fill(null);
-
-//     dist[startIndex] = 0;
-
-//     for (let i = 0; i < n; i++) {
-//         let u = -1;
-//         for (let j = 0; j < n; j++) {
-//             if (!visited[j] && (u === -1 || dist[j] < dist[u])) {
-//                 u = j;
-//             }
-//         }
-
-//         if (dist[u] === Infinity) break;
-//         visited[u] = true;
-
-//         for (let v = 0; v < n; v++) {
-//             if (matrix[u][v] > 0 && !visited[v]) {
-//                 const alt = dist[u] + matrix[u][v];
-//                 if (alt < dist[v]) {
-//                     dist[v] = alt;
-//                     prev[v] = u;
-//                 }
-//             }
-//         }
-//     }
-
-//     return { dist, prev };
-// }
-
-// // Path Reconstructor
-// function getPath(prev, start, end) {
-//     const path = [];
-//     for (let at = end; at !== null; at = prev[at]) {
-//         path.unshift(at);
-//     }
-//     return path[0] === start ? path : [];
-// }
-
-// module.exports = router;
-
