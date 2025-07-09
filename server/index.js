@@ -19,6 +19,13 @@ const app= server()
 
 // //middleware
 app.use(server.json());
+//cors
+const cors = require('cors');
+app.use(cors({
+    origin: '*', // Allow all origins
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow specific methods
+    allowedHeaders: ['Content-Type', 'Authorization'] // Allow specific headers
+}));
 
 
 

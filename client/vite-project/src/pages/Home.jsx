@@ -13,14 +13,35 @@ const Home = () => {
   const [path, setPath] = useState(null)
   const [showPath, setShowPath] = useState(false)
 
-  const handleShowPath = () => {
-    if (source && destination) {
-      const foundPath = findShortestPath(source, destination)
-      setPath(foundPath)
-      setShowPath(true)
+  const pathfinder = async(source, destination) => {
+      try {
+      const api = "http://localhost:3000/api/findpath"; // 🔁 Use correct URL and correct port (backend)
+      const response = await fetch(api, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ source, destination })
+      });
+
+      const data = await response.json();
+      return data;
+
+    } catch (error) {
+      console.error("API call failed:", error);
     }
   }
 
+  const handleShowPath = async() => {
+    const foundPath = await pathfinder(source, destination);
+
+if (foundPath && Array.isArray(foundPath)) {
+  const stationNamesOnly = foundPath;
+  console.log('Station path:', stationNamesOnly);
+  setPath(stationNamesOnly);
+  setShowPath(true);
+  }
+  }
   const handleReset = () => {
     setSource('')
     setDestination('')

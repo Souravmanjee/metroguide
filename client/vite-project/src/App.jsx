@@ -16,7 +16,7 @@ function App() {
           <Navbar />
           <main className="pt-16">
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Home/>} />
               <Route path="/stations" element={<Stations />} />
               <Route path="/map" element={<Map />} />
               <Route path="/regional-places" element={<RegionalPlaces />} />

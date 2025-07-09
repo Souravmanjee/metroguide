@@ -1,10 +1,9 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { FiArrowRight, FiRefreshCw } from 'react-icons/fi'
-import { getStationLine, getLineChanges } from '../data/metroData'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { FiArrowRight, FiRefreshCw } from 'react-icons/fi';
 
 const PathResult = ({ path, source, destination }) => {
-  if (!path) {
+  if (!path || path.length === 0) {
     return (
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
@@ -18,12 +17,27 @@ const PathResult = ({ path, source, destination }) => {
           Sorry, we couldn't find a route between {source} and {destination}.
         </p>
       </motion.div>
-    )
+    );
   }
 
-  const lineChanges = getLineChanges(path)
-  const totalStations = path.length
-  const estimatedTime = Math.ceil(totalStations * 2.5) // Rough estimate: 2.5 minutes per station
+  // Get line changes by comparing linecolor of consecutive stations
+  const getLineChanges = (path) => {
+    const changes = [];
+    for (let i = 1; i < path.length; i++) {
+      if (path[i].linecolor !== path[i - 1].linecolor) {
+        changes.push({
+          station: path[i].stations,
+          fromLine: path[i - 1].linecolor,
+          toLine: path[i].linecolor,
+        });
+      }
+    }
+    return changes;
+  };
+
+  const lineChanges = getLineChanges(path);
+  const totalStations = path.length;
+  const estimatedTime = Math.ceil(totalStations * 2.5);
 
   return (
     <motion.div
@@ -60,55 +74,51 @@ const PathResult = ({ path, source, destination }) => {
       <div className="p-6">
         <div className="space-y-3">
           {path.map((station, index) => {
-            const stationLine = getStationLine(station)
-            const isSource = index === 0
-            const isDestination = index === path.length - 1
-            const lineChange = lineChanges.find(change => change.station === station)
+            const isSource = index === 0;
+            const isDestination = index === path.length - 1;
+            const lineChange = lineChanges.find(change => change.station === station.stations);
 
             return (
-              <div key={`${station}-${index}`}>
+              <div key={station._id}>
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
                   className="flex items-center gap-3"
                 >
-                  {/* Station indicator */}
+                  {/* Dot */}
                   <div className={`w-4 h-4 rounded-full border-2 ${
-                    isSource || isDestination 
-                      ? 'bg-blue-500 border-blue-500' 
+                    isSource || isDestination
+                      ? 'bg-blue-500 border-blue-500'
                       : 'bg-gray-300 dark:bg-gray-600 border-gray-400 dark:border-gray-500'
                   }`} />
 
-                  {/* Station info */}
+                  {/* Station Info */}
                   <div className="flex-1">
                     <div className="flex items-center gap-2 flex-wrap">
                       <span className={`font-medium ${
-                        isSource || isDestination 
-                          ? 'text-blue-600 dark:text-blue-400' 
+                        isSource || isDestination
+                          ? 'text-blue-600 dark:text-blue-400'
                           : 'text-gray-900 dark:text-gray-100'
                       }`}>
-                        {station}
+                        {station.stations}
                       </span>
-                      
-                      {stationLine && (
-                        <span 
-                          className={`px-2 py-1 rounded-full text-xs font-medium line-${stationLine.name.toLowerCase().replace(' ', '-')}`}
-                          style={{ 
-                            color: stationLine.color,
-                            backgroundColor: `${stationLine.color}20`
-                          }}
-                        >
-                          {stationLine.name}
-                        </span>
-                      )}
+
+                      <span
+                        className="px-2 py-1 rounded-full text-xs font-medium"
+                        style={{
+                          color: station.linecolor,
+                          backgroundColor: `${station.linecolor}20`
+                        }}
+                      >
+                        {station.linecolor} Line
+                      </span>
 
                       {isSource && (
                         <span className="px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-medium rounded-full">
                           Start
                         </span>
                       )}
-
                       {isDestination && (
                         <span className="px-2 py-1 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 text-xs font-medium rounded-full">
                           End
@@ -116,7 +126,7 @@ const PathResult = ({ path, source, destination }) => {
                       )}
                     </div>
 
-                    {/* Line change notification */}
+                    {/* Line Change Notification */}
                     {lineChange && (
                       <motion.div
                         initial={{ opacity: 0, height: 0 }}
@@ -127,14 +137,14 @@ const PathResult = ({ path, source, destination }) => {
                           <FiRefreshCw className="text-yellow-600 dark:text-yellow-400" />
                           <span className="text-yellow-800 dark:text-yellow-200 font-medium">
                             Change from{' '}
-                            <span style={{ color: lineChange.fromLine.color }}>
-                              {lineChange.fromLine.name}
-                            </span>
-                            {' '}to{' '}
-                            <span style={{ color: lineChange.toLine.color }}>
-                              {lineChange.toLine.name}
-                            </span>
-                            {' '}at {station}
+                            <span style={{ color: lineChange.fromLine }}>
+                              {lineChange.fromLine}
+                            </span>{' '}
+                            to{' '}
+                            <span style={{ color: lineChange.toLine }}>
+                              {lineChange.toLine}
+                            </span>{' '}
+                            at {lineChange.station}
                           </span>
                         </div>
                       </motion.div>
@@ -142,17 +152,17 @@ const PathResult = ({ path, source, destination }) => {
                   </div>
                 </motion.div>
 
-                {/* Connection line */}
+                {/* Connecting line */}
                 {index < path.length - 1 && (
                   <div className="ml-2 w-0.5 h-6 bg-gray-300 dark:bg-gray-600" />
                 )}
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default PathResult
+export default PathResult;
