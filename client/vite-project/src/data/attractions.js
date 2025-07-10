@@ -6,7 +6,7 @@ export const kolkataAttractions = [
     name: "Victoria Memorial",
     description: "Iconic marble monument dedicated to Queen Victoria, now a museum showcasing British colonial history",
     nearbyStations: ["Maidan", "Park Street"],
-    image: "https://images.pexels.com/photos/3573382/pexels-photo-3573382.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://images.pexels.com/photos/16294/pexels-photo.jpg",
     category: "Historical"
   },
   {
@@ -14,7 +14,7 @@ export const kolkataAttractions = [
     name: "Fort William",
     description: "Historic British fort built in 1696, now headquarters of the Eastern Command of Indian Army",
     nearbyStations: ["Maidan", "Esplanade"],
-    image: "https://images.pexels.com/photos/1007426/pexels-photo-1007426.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://en.banglapedia.org/images/5/59/FortWilliamKolkata.jpg",
     category: "Historical"
   },
   {
@@ -22,7 +22,7 @@ export const kolkataAttractions = [
     name: "Marble Palace",
     description: "19th-century mansion with marble walls and floors, featuring European sculptures and paintings",
     nearbyStations: ["Shyambazar", "Sovabazar-Sutanuti"],
-    image: "https://images.pexels.com/photos/3573390/pexels-photo-3573390.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://kolkatatourism.travel/images/places-to-visit/headers/marble-palace-mansion-kolkata-tourism-entry-fee-timings-holidays-reviews-header.jpg",
     category: "Historical"
   },
   {
@@ -30,7 +30,7 @@ export const kolkataAttractions = [
     name: "South Park Street Cemetery",
     description: "Historic colonial cemetery with Gothic monuments and tombs of British officials",
     nearbyStations: ["Park Street", "Maidan"],
-    image: "https://images.pexels.com/photos/3573393/pexels-photo-3573393.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://kevinstandagephotography.wordpress.com/wp-content/uploads/2023/05/ksp_4770-2-2.jpg?w=1250&h=",
     category: "Historical"
   },
   {
@@ -38,7 +38,7 @@ export const kolkataAttractions = [
     name: "Writers' Building",
     description: "Historic government building that served as the secretariat of West Bengal",
     nearbyStations: ["Esplanade", "Central"],
-    image: "https://images.pexels.com/photos/1007427/pexels-photo-1007427.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfnGCs3gdKr0otg_ARCUnXr1qS237026VF2A&s",
     category: "Historical"
   },
   {
@@ -46,7 +46,7 @@ export const kolkataAttractions = [
     name: "Raj Bhavan",
     description: "Official residence of the Governor of West Bengal, former Government House",
     nearbyStations: ["Maidan", "Park Street"],
-    image: "https://images.pexels.com/photos/1007428/pexels-photo-1007428.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXpgA5rf2PPzwpbm47h7vGZbj1dMIUij5Y_g&s",
     category: "Historical"
   },
 
@@ -56,7 +56,7 @@ export const kolkataAttractions = [
     name: "Dakshineswar Kali Temple",
     description: "Sacred Hindu temple dedicated to Goddess Kali, associated with Sri Ramakrishna",
     nearbyStations: ["Dakshineswar"],
-    image: "https://images.pexels.com/photos/3573384/pexels-photo-3573384.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/32/Dakhineshwar_Temple_beside_the_Hoogly%2C_West_Bengal.JPG",
     category: "Religious"
   },
   {
@@ -64,7 +64,7 @@ export const kolkataAttractions = [
     name: "Kalighat Temple",
     description: "Ancient temple dedicated to Goddess Kali, one of the 51 Shakti Peethas",
     nearbyStations: ["Kalighat"],
-    image: "https://images.pexels.com/photos/3573386/pexels-photo-3573386.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://www.trawell.in/admin/images/upload/555418767Kolkata_Kalighat_Temple_Main.jpg",
     category: "Religious"
   },
   {
@@ -72,7 +72,7 @@ export const kolkataAttractions = [
     name: "Belur Math",
     description: "Headquarters of the Ramakrishna Math and Mission, founded by Swami Vivekananda",
     nearbyStations: ["Dakshineswar", "Baranagar"],
-    image: "https://images.pexels.com/photos/3573392/pexels-photo-3573392.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://preview.redd.it/what-is-belur-math-exactly-v0-302tjeznuhpc1.jpeg?auto=webp&s=e6ef373f64f58c6a1bc1014712a225c5f008e5c5",
     category: "Religious"
   },
   {
@@ -80,7 +80,7 @@ export const kolkataAttractions = [
     name: "St. Paul's Cathedral",
     description: "Anglican cathedral and the first episcopal church in Asia",
     nearbyStations: ["Maidan", "Park Street"],
-    image: "https://images.pexels.com/photos/1007429/pexels-photo-1007429.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/65/75/3b/st-paul-s-cathedral.jpg?w=1200&h=1200&s=1",
     category: "Religious"
   },
   {
@@ -88,7 +88,7 @@ export const kolkataAttractions = [
     name: "Nakhoda Mosque",
     description: "Principal mosque of Kolkata, built in Indo-Saracenic style",
     nearbyStations: ["Central", "Chandni Chowk"],
-    image: "https://images.pexels.com/photos/1007430/pexels-photo-1007430.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwajd5dWRKY6ncYoEDZm8_pL-zuloSUnDbcQ&s",
     category: "Religious"
   },
   {
@@ -96,7 +96,7 @@ export const kolkataAttractions = [
     name: "Birla Mandir",
     description: "Modern Hindu temple dedicated to Lord Krishna and Radha",
     nearbyStations: ["Rabindra Sadan", "Maidan"],
-    image: "https://images.pexels.com/photos/1007431/pexels-photo-1007431.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://d3k1i85mml78tf.cloudfront.net/Blogs/1650298900679_post_image_1.jpg",
     category: "Religious"
   },
   {
@@ -104,7 +104,7 @@ export const kolkataAttractions = [
     name: "Jain Temple Pareshnath",
     description: "Beautiful Jain temple known for its intricate architecture and peaceful atmosphere",
     nearbyStations: ["Girish Park", "Central"],
-    image: "https://images.pexels.com/photos/1007432/pexels-photo-1007432.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/de/Calcutta_Jain_Temple-Sheetalnath_Mandir-P1080642.jpg",
     category: "Religious"
   },
 
@@ -114,7 +114,7 @@ export const kolkataAttractions = [
     name: "Indian Museum",
     description: "Oldest and largest museum in India with rare collections of antiques and artifacts",
     nearbyStations: ["Park Street", "Maidan"],
-    image: "https://images.pexels.com/photos/3573385/pexels-photo-3573385.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZgi-7h0G6DiOvD3AeZxi-HgtXA4aYbdOs5w&s",
     category: "Cultural"
   },
   {
@@ -122,7 +122,7 @@ export const kolkataAttractions = [
     name: "Academy of Fine Arts",
     description: "Premier institution for fine arts with galleries showcasing contemporary and traditional art",
     nearbyStations: ["Rabindra Sadan", "Maidan"],
-    image: "https://images.pexels.com/photos/1007433/pexels-photo-1007433.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://www.theatreroad.com/image.php?src=https://www.theatreroad.com/uploads/images/c197d6ada66ea07dc7410e3f48a2deea.jpg&h=416&zc=1&s=1",
     category: "Cultural"
   },
   {
@@ -130,7 +130,7 @@ export const kolkataAttractions = [
     name: "Rabindra Bharati Museum",
     description: "Museum dedicated to Nobel laureate Rabindranath Tagore's life and works",
     nearbyStations: ["Girish Park", "Sovabazar-Sutanuti"],
-    image: "https://images.pexels.com/photos/1007434/pexels-photo-1007434.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/1f/70/20/rabindra-bharati-university.jpg?w=900&h=-1&s=1",
     category: "Cultural"
   },
   {
@@ -138,7 +138,7 @@ export const kolkataAttractions = [
     name: "Netaji Bhawan",
     description: "Ancestral home of Netaji Subhas Chandra Bose, now a museum",
     nearbyStations: ["Kalighat", "Jatin Das Park"],
-    image: "https://images.pexels.com/photos/1007435/pexels-photo-1007435.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwnap0qq-tBrQD93FEQHVqLQR7hnElf9C0pw&s",
     category: "Cultural"
   },
   {
@@ -146,7 +146,7 @@ export const kolkataAttractions = [
     name: "Tagore House",
     description: "Ancestral home of the Tagore family, birthplace of Rabindranath Tagore",
     nearbyStations: ["Girish Park", "Central"],
-    image: "https://images.pexels.com/photos/1007436/pexels-photo-1007436.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/d6/b8/14/tagore-house-calcutta.jpg?w=900&h=-1&s=1",
     category: "Cultural"
   },
   {
@@ -154,7 +154,7 @@ export const kolkataAttractions = [
     name: "Kala Mandir",
     description: "Cultural center hosting theater performances, concerts, and cultural events",
     nearbyStations: ["Rabindra Sadan", "Maidan"],
-    image: "https://images.pexels.com/photos/1007437/pexels-photo-1007437.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://content.jdmagicbox.com/v2/comp/kolkata/79/033p8000079/catalogue/kala-mandir-auditorium-park-circus-kolkata-auditoriums-0iVnNqL8lg-250.jpg",
     category: "Cultural"
   },
 
@@ -164,7 +164,7 @@ export const kolkataAttractions = [
     name: "Science City",
     description: "Largest science center in the Indian subcontinent with interactive exhibits",
     nearbyStations: ["Rabindra Sarobar", "Tollygunge"],
-    image: "https://images.pexels.com/photos/3573387/pexels-photo-3573387.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPKTsR5SIjnjLAjKyXjVGhn61Mw674ix4IsA&s",
     category: "Educational"
   },
   {
@@ -172,7 +172,7 @@ export const kolkataAttractions = [
     name: "Birla Planetarium",
     description: "One of the largest planetariums in Asia with astronomy shows and exhibitions",
     nearbyStations: ["Maidan", "Park Street"],
-    image: "https://images.pexels.com/photos/3573389/pexels-photo-3573389.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://www.indiaeasytrip.com/states-of-india/places-to-visit-in-kolkata/birla-planetarium.jpg",
     category: "Educational"
   },
   {
@@ -180,7 +180,7 @@ export const kolkataAttractions = [
     name: "Alipore Zoo",
     description: "One of the oldest zoos in India, home to diverse wildlife species",
     nearbyStations: ["Kalighat", "Jatin Das Park"],
-    image: "https://images.pexels.com/photos/1007438/pexels-photo-1007438.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://kolkataa.weebly.com/uploads/1/1/3/9/11398851/3882976.jpg",
     category: "Educational"
   },
   {
@@ -188,7 +188,7 @@ export const kolkataAttractions = [
     name: "Aquatica",
     description: "Water theme park with thrilling rides and water attractions",
     nearbyStations: ["New Garia", "Kavi Nazrul"],
-    image: "https://images.pexels.com/photos/1007439/pexels-photo-1007439.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJY8op1cOB-GMgbaZa0GcPTyRL7_nPXBvcatZOmVp-cLH_ZwzV3XtWOAzVR6mxHRetohg&usqp=CAU",
     category: "Educational"
   },
 
@@ -198,7 +198,7 @@ export const kolkataAttractions = [
     name: "New Market",
     description: "Historic shopping complex in central Kolkata, famous for variety of goods",
     nearbyStations: ["Esplanade", "Central"],
-    image: "https://images.pexels.com/photos/3573388/pexels-photo-3573388.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/37/New_Market%2C_Kolkata%2C_2011.jpg",
     category: "Shopping"
   },
   {
@@ -206,7 +206,7 @@ export const kolkataAttractions = [
     name: "Gariahat Market",
     description: "Popular shopping destination for traditional Bengali sarees and handicrafts",
     nearbyStations: ["Rabindra Sarobar", "Kalighat"],
-    image: "https://images.pexels.com/photos/1007440/pexels-photo-1007440.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/c2/6c/6f/gariahat-market.jpg?w=900&h=500&s=1",
     category: "Shopping"
   },
   {
@@ -214,7 +214,7 @@ export const kolkataAttractions = [
     name: "College Street",
     description: "Famous book market, largest second-hand book market in the world",
     nearbyStations: ["Central", "Mahatma Gandhi Road"],
-    image: "https://images.pexels.com/photos/1007441/pexels-photo-1007441.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://i.ytimg.com/vi/cABh0jL7nUA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCDcIgizZhjR5JmyGwn9ag3hC-Omw",
     category: "Shopping"
   },
   {
@@ -222,7 +222,7 @@ export const kolkataAttractions = [
     name: "Shyama Charan Street",
     description: "Traditional market known for ethnic wear and Bengali handicrafts",
     nearbyStations: ["Shyama Charan", "Shyambazar"],
-    image: "https://images.pexels.com/photos/1007442/pexels-photo-1007442.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiBU_eZfm53eqgmGlRJdUBGJD0z9USxp6WjA&s",
     category: "Shopping"
   },
   {
@@ -230,7 +230,7 @@ export const kolkataAttractions = [
     name: "Hatibagan Market",
     description: "Local market famous for fresh fish, vegetables, and daily essentials",
     nearbyStations: ["Shyambazar", "Sovabazar-Sutanuti"],
-    image: "https://images.pexels.com/photos/1007443/pexels-photo-1007443.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2qDNKCkmRgEsn6A8IHCGN04xeLMLfELnTBw&s",
     category: "Shopping"
   },
   {
@@ -238,7 +238,7 @@ export const kolkataAttractions = [
     name: "Burrabazar",
     description: "One of the largest wholesale markets in India for textiles and goods",
     nearbyStations: ["Central", "Chandni Chowk"],
-    image: "https://images.pexels.com/photos/1007444/pexels-photo-1007444.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIxSu1gxy5wfjJwUop7U51Hsg4z-Vm9jwOKg&s",
     category: "Shopping"
   },
 
@@ -248,7 +248,7 @@ export const kolkataAttractions = [
     name: "Howrah Bridge",
     description: "Famous cantilever bridge over the Hooghly River, iconic symbol of Kolkata",
     nearbyStations: ["Howrah", "Howrah Maidan"],
-    image: "https://images.pexels.com/photos/3573383/pexels-photo-3573383.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://indiano.travel/wp-content/uploads/2022/03/Kolkata.webp",
     category: "Landmark"
   },
   {
@@ -256,7 +256,7 @@ export const kolkataAttractions = [
     name: "Vidyasagar Setu",
     description: "Cable-stayed bridge connecting Kolkata and Howrah, second Hooghly bridge",
     nearbyStations: ["Howrah", "Esplanade"],
-    image: "https://images.pexels.com/photos/1007445/pexels-photo-1007445.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnZqx7Cob62hrL4eQcozMi2Iy_cBuhwh_eQw&s",
     category: "Landmark"
   },
   {
@@ -264,7 +264,7 @@ export const kolkataAttractions = [
     name: "Shaheed Minar",
     description: "Historic monument commemorating the martyrs of Indian independence",
     nearbyStations: ["Esplanade", "Maidan"],
-    image: "https://images.pexels.com/photos/1007446/pexels-photo-1007446.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://kolkatatourism.travel/images//tourist-places/shaheed-minar-kolkata/shaheed-minar-kolkata-tourism-holidays-closed-on-timings.jpg",
     category: "Landmark"
   },
   {
@@ -272,7 +272,7 @@ export const kolkataAttractions = [
     name: "Millennium Park",
     description: "Riverside park along the Hooghly River with beautiful city views",
     nearbyStations: ["Howrah", "Esplanade"],
-    image: "https://images.pexels.com/photos/1007447/pexels-photo-1007447.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnXIpgZnekMw-NljcvW5mLF0qIEO2lyz5neg&s",
     category: "Landmark"
   },
 
@@ -282,7 +282,7 @@ export const kolkataAttractions = [
     name: "Eden Gardens",
     description: "Historic cricket stadium and one of the largest in the world",
     nearbyStations: ["Maidan", "Esplanade"],
-    image: "https://images.pexels.com/photos/3573391/pexels-photo-3573391.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlmpzQhgnv4cc0htP4A2tfWGAHdqa2wVmNmQ&s",
     category: "Sports"
   },
   {
@@ -290,7 +290,7 @@ export const kolkataAttractions = [
     name: "Salt Lake Stadium",
     description: "Multi-purpose stadium, one of the largest football stadiums in the world",
     nearbyStations: ["New Town", "Baguiati"],
-    image: "https://images.pexels.com/photos/1007448/pexels-photo-1007448.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmUEjraj9RnrhIE3AAWycsscxstT7RM_reFw&s",
     category: "Sports"
   },
   {
@@ -298,7 +298,7 @@ export const kolkataAttractions = [
     name: "Maidan",
     description: "Large urban park, the lungs of Kolkata with various sports facilities",
     nearbyStations: ["Maidan", "Park Street"],
-    image: "https://images.pexels.com/photos/1007449/pexels-photo-1007449.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://sceneloc8.com/wp-content/uploads/2024/03/5-44.png",
     category: "Sports"
   },
   {
@@ -306,7 +306,7 @@ export const kolkataAttractions = [
     name: "Rabindra Sarobar",
     description: "Artificial lake and recreational area, popular for morning walks and boating",
     nearbyStations: ["Rabindra Sarobar", "Tollygunge"],
-    image: "https://images.pexels.com/photos/1007450/pexels-photo-1007450.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHau_pQFMM3Pbx7BFIpgoIdYpIg9HJJ-N7iQ&s",
     category: "Sports"
   },
 
@@ -316,7 +316,7 @@ export const kolkataAttractions = [
     name: "Nicco Park",
     description: "Amusement park with thrilling rides and entertainment for families",
     nearbyStations: ["New Town", "Baguiati"],
-    image: "https://images.pexels.com/photos/1007451/pexels-photo-1007451.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://indiano.travel/wp-content/uploads/2023/08/Nicco-Park_-Kolkata-2.webp",
     category: "Entertainment"
   },
   {
@@ -324,7 +324,7 @@ export const kolkataAttractions = [
     name: "Eco Park",
     description: "Large urban park with lakes, gardens, and recreational activities",
     nearbyStations: ["New Town", "Baguiati"],
-    image: "https://images.pexels.com/photos/1007452/pexels-photo-1007452.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Eco_Park_Ticket_Counter.jpg/1280px-Eco_Park_Ticket_Counter.jpg",
     category: "Entertainment"
   },
   {
@@ -332,7 +332,7 @@ export const kolkataAttractions = [
     name: "Quest Mall",
     description: "Modern shopping mall with retail stores, restaurants, and entertainment",
     nearbyStations: ["Park Street", "Maidan"],
-    image: "https://images.pexels.com/photos/1007453/pexels-photo-1007453.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNWU9KWPbBt3J_ykttFNO-8lyObSDm414kNw&s",
     category: "Entertainment"
   },
 
@@ -342,7 +342,7 @@ export const kolkataAttractions = [
     name: "Park Street",
     description: "Famous street known for restaurants, pubs, and nightlife",
     nearbyStations: ["Park Street"],
-    image: "https://images.pexels.com/photos/1007454/pexels-photo-1007454.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZxSvxXgs_rZx2_oSJJ9LTxQoOkqUdJ_hn_g&s",
     category: "Food"
   },
   {
@@ -350,7 +350,7 @@ export const kolkataAttractions = [
     name: "Kumartuli",
     description: "Traditional potter's quarter famous for clay idol making",
     nearbyStations: ["Sovabazar-Sutanuti", "Girish Park"],
-    image: "https://images.pexels.com/photos/1007455/pexels-photo-1007455.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9rCSszXrU34W66VmHX4ZeCiw507_EXQp6w&s",
     category: "Cultural"
   },
   {
@@ -358,7 +358,7 @@ export const kolkataAttractions = [
     name: "Chinatown",
     description: "Historic Chinese settlement with authentic Chinese restaurants and culture",
     nearbyStations: ["Central", "Chandni Chowk"],
-    image: "https://images.pexels.com/photos/1007456/pexels-photo-1007456.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTifSkY8VRc0n5NAGTZDFutAVb9Em4jIA2N-Q&s",
     category: "Food"
   },
   {
@@ -366,7 +366,7 @@ export const kolkataAttractions = [
     name: "Coffee House",
     description: "Historic coffee house, intellectual hub and cultural meeting place",
     nearbyStations: ["Central", "Mahatma Gandhi Road"],
-    image: "https://images.pexels.com/photos/1007457/pexels-photo-1007457.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6LVn9Z2_m76eN5U1QzkyPEwHKpVlTlVI2ug&s",
     category: "Food"
   },
 
@@ -376,7 +376,7 @@ export const kolkataAttractions = [
     name: "High Court",
     description: "Historic building housing the Calcutta High Court, architectural marvel",
     nearbyStations: ["Esplanade", "Central"],
-    image: "https://images.pexels.com/photos/1007458/pexels-photo-1007458.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/09/Calcutta_highcourt.jpg",
     category: "Historical"
   },
   {
@@ -384,7 +384,7 @@ export const kolkataAttractions = [
     name: "General Post Office",
     description: "Historic post office building with impressive colonial architecture",
     nearbyStations: ["Esplanade", "Central"],
-    image: "https://images.pexels.com/photos/1007459/pexels-photo-1007459.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsK8rE8kGd-QP72hKMRBWu5uK_CJP_LyInGbhYVnTEBQFKSnyc6Y32TFS_640TdekFwG_5sevR1ccCGDtMu3EjWdsGI0fE9X-T84DqO1dvbVL53amamCy1hwfqpO0v4SX8uUZEC12V6Jc/s1600/GPO+Front+Final.jpg",
     category: "Historical"
   },
   {
@@ -392,7 +392,7 @@ export const kolkataAttractions = [
     name: "Town Hall",
     description: "Neoclassical building housing various cultural and administrative offices",
     nearbyStations: ["Esplanade", "Central"],
-    image: "https://images.pexels.com/photos/1007460/pexels-photo-1007460.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://kolkatatourism.travel/images/places-to-visit/headers/town-hall-kolkata-tourism-entry-fee-timings-holidays-reviews-header.jpg",
     category: "Historical"
   },
   {
@@ -400,7 +400,7 @@ export const kolkataAttractions = [
     name: "Armenian Church",
     description: "Historic Armenian Apostolic church, one of the oldest in Kolkata",
     nearbyStations: ["Central", "Chandni Chowk"],
-    image: "https://images.pexels.com/photos/1007461/pexels-photo-1007461.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://kolkatatourism.travel/images/places-to-visit/headers/armenian-church-kolkata-tourism-entry-fee-timings-holidays-reviews-header.jpg",
     category: "Religious"
   },
 
@@ -410,7 +410,7 @@ export const kolkataAttractions = [
     name: "Mother House",
     description: "Mother Teresa's residence and final resting place, now a pilgrimage site",
     nearbyStations: ["Park Street", "Maidan"],
-    image: "https://images.pexels.com/photos/1007462/pexels-photo-1007462.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/3a/aa/ec/photo4jpg.jpg?w=1200&h=1200&s=1",
     category: "Religious"
   },
   {
@@ -418,7 +418,7 @@ export const kolkataAttractions = [
     name: "Prinsep Ghat",
     description: "Historic ghat on the Hooghly River with beautiful sunset views",
     nearbyStations: ["Esplanade", "Maidan"],
-    image: "https://images.pexels.com/photos/1007463/pexels-photo-1007463.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://www.backpacknxplore.com/wp-content/uploads/2023/08/Sunset-princep.jpg",
     category: "Landmark"
   },
   {
@@ -426,7 +426,7 @@ export const kolkataAttractions = [
     name: "Babu Ghat",
     description: "Historic bathing ghat on the Hooghly River, popular for evening walks",
     nearbyStations: ["Esplanade", "Maidan"],
-    image: "https://images.pexels.com/photos/1007464/pexels-photo-1007464.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://kolkatatourism.travel/images/places-to-visit/headers/babughat-kolkata-header-kolkata-tourism.jpg.jpg",
     category: "Landmark"
   },
   {
@@ -434,7 +434,7 @@ export const kolkataAttractions = [
     name: "Botanical Garden",
     description: "Historic botanical garden famous for the Great Banyan Tree",
     nearbyStations: ["Howrah", "Howrah Maidan"],
-    image: "https://images.pexels.com/photos/1007465/pexels-photo-1007465.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://i0.wp.com/footlooseforever.com/wp-content/uploads/2015/01/garden-path1.jpg?fit=1200%2C848&ssl=1",
     category: "Educational"
   },
 
@@ -444,7 +444,7 @@ export const kolkataAttractions = [
     name: "Jorasanko Thakur Bari",
     description: "Ancestral home of Rabindranath Tagore, now Rabindra Bharati University",
     nearbyStations: ["Girish Park", "Central"],
-    image: "https://images.pexels.com/photos/1007466/pexels-photo-1007466.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://kolkatatourism.travel/images/places-to-visit/headers/jorasanko-thakurbari-house-of-the-thakurs-kolkata-entry-fee-timings-holidays-reviews-header.jpg",
     category: "Cultural"
   },
   {
@@ -452,7 +452,7 @@ export const kolkataAttractions = [
     name: "Ramakrishna Mission Institute",
     description: "Educational and spiritual institution founded by Swami Vivekananda",
     nearbyStations: ["Tollygunge", "Rabindra Sarobar"],
-    image: "https://images.pexels.com/photos/1007467/pexels-photo-1007467.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtRuRnTigsp8Q6B-ZoNt9m26XGIcLzsK8WEA&s",
     category: "Educational"
   },
   {
@@ -460,7 +460,7 @@ export const kolkataAttractions = [
     name: "Calcutta University",
     description: "One of the oldest universities in India, historic educational institution",
     nearbyStations: ["Central", "Mahatma Gandhi Road"],
-    image: "https://images.pexels.com/photos/1007468/pexels-photo-1007468.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaupaCY7BDPzbkrqn6uSM6HRbJIpyEHvyMxg&s",
     category: "Educational"
   },
   {
@@ -468,7 +468,7 @@ export const kolkataAttractions = [
     name: "Presidency University",
     description: "Premier educational institution with rich academic heritage",
     nearbyStations: ["Central", "Mahatma Gandhi Road"],
-    image: "https://images.pexels.com/photos/1007469/pexels-photo-1007469.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://www.presiuniv.ac.in/web/img/IMG-20230705-WA0001.jpg",
     category: "Educational"
   },
 
@@ -478,7 +478,7 @@ export const kolkataAttractions = [
     name: "Tipu Sultan Mosque",
     description: "Historic mosque built by Tipu Sultan, architectural significance",
     nearbyStations: ["Esplanade", "Central"],
-    image: "https://images.pexels.com/photos/1007470/pexels-photo-1007470.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/48/Kolkata_Tipu_Sultan%27s_Mosque3.jpg",
     category: "Religious"
   },
   {
@@ -486,7 +486,7 @@ export const kolkataAttractions = [
     name: "Beth El Synagogue",
     description: "Historic Jewish synagogue, representing Kolkata's Jewish heritage",
     nearbyStations: ["Park Street", "Maidan"],
-    image: "https://images.pexels.com/photos/1007471/pexels-photo-1007471.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ZaY50c-5nU5yyr4diRxTZV4fY5NrbXbIvA&s",
     category: "Religious"
   },
   {
@@ -494,7 +494,7 @@ export const kolkataAttractions = [
     name: "Magen David Synagogue",
     description: "Beautiful synagogue showcasing Jewish architectural heritage",
     nearbyStations: ["Central", "Chandni Chowk"],
-    image: "https://images.pexels.com/photos/1007472/pexels-photo-1007472.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Magen_David_Synagogue_Interiors_after_restoration.jpg/500px-Magen_David_Synagogue_Interiors_after_restoration.jpg",
     category: "Religious"
   },
   {
@@ -502,7 +502,7 @@ export const kolkataAttractions = [
     name: "Gurudwara Bhai Joga Singh",
     description: "Sikh temple serving the Sikh community with langar and prayers",
     nearbyStations: ["Central", "Chandni Chowk"],
-    image: "https://images.pexels.com/photos/1007473/pexels-photo-1007473.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image: "https://hblimg.mmtcdn.com/content/hubble/img/ttd_images/mmt/activities/t_ufs/m_Hoshiarpur_Gurudwara_sahib_shaheedan-ladhewal_1_l_480_640.jpg",
     category: "Religious"
   }
 ]

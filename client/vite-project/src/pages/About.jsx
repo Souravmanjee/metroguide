@@ -141,7 +141,7 @@ const About = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <div className="text-3xl font-bold mb-2">70+</div>
+              <div className="text-3xl font-bold mb-2">50+</div>
               <div className="text-sm opacity-90">Metro Stations</div>
             </div>
             <div>
@@ -149,7 +149,7 @@ const About = () => {
               <div className="text-sm opacity-90">Metro Lines</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">12+</div>
+              <div className="text-3xl font-bold mb-2">50+</div>
               <div className="text-sm opacity-90">Tourist Attractions</div>
             </div>
             <div>
@@ -224,25 +224,50 @@ const About = () => {
             </p>
             
             <div className="flex justify-center gap-6">
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                href="mailto:contact@metroguide.com"
-                className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-colors"
-              >
-                <FiMail />
-                Contact Us
-              </motion.a>
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                href="#"
-                className="flex items-center gap-2 bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
-              >
-                <FiGithub />
-                GitHub
-              </motion.a>
-            </div>
+  <motion.a
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=souravkumarvicky42@gmail.com"
+    className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+  >
+    <FiMail />
+    Contact Us
+  </motion.a>
+
+  <motion.a
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    href="https://github.com/Souravmanjee"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+  >
+    <FiGithub />
+    GitHub
+  </motion.a>
+
+  <motion.a
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    href="https://www.linkedin.com/in/sourav-manjee-78a49a260"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+  >
+    <svg
+      className="h-5 w-5"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path
+        d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.038-1.852-3.038-1.853 0-2.137 1.448-2.137 2.945v5.662H9.067V9h3.104v1.561h.044c.433-.822 1.494-1.688 3.073-1.688 3.29 0 3.894 2.165 3.894 4.981v6.598zM5.337 7.433a1.814 1.814 0 110-3.628 1.814 1.814 0 010 3.628zM6.813 20.452H3.861V9h2.952v11.452zM22.225 0H1.771C.792 0 0 .771 0 1.723v20.554C0 23.229.792 24 1.771 24h20.451C23.206 24 24 23.229 24 22.277V1.723C24 .771 23.206 0 22.225 0z"
+      />
+    </svg>
+    LinkedIn
+  </motion.a>
+</div>
+
           </div>
         </motion.div>
       </div>

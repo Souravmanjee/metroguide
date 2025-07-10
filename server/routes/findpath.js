@@ -10,13 +10,13 @@ app.post('/findpath', apicall);
 async function apicall(req, res) {
     try {
         const data = req.body;
-        const id = "68029f9137b3d3732d699890";
+        const id = "686e256cff923c915c747bd6";
 
         const mapdata = await model.findOne({ _id: id }).lean(); // ✅ use await
         const stationlist= await model1.find();
         // console.log(stationlist);
         if (!mapdata) {
-            return res.status(404).json({ error: "Map data not found" });
+            return res.status(500).json({ error: "Map data not found" });
         }
         
 

@@ -1,94 +1,89 @@
-const connect=require ('../models/connections')
-const station=require('../models/stations')
-const mp=require ('../models/map')
-const server = require ('express')
-const app=server()
+const express = require('express');
+const connect = require('../models/connections');
+const station = require('../models/stations');
+const mp = require('../models/map');
 
+const app = express();
 
 app.post('/addconnection', apicall);
 
-
-function indexof(a,station){
-    
-    for(let i=0;i<station.length;i++){
-        
-        if(a===station[i].stations){
-            // console.log("test");
-            return i;
-        }
+function indexof(a, stationList) {
+  for (let i = 0; i < stationList.length; i++) {
+    if (a === stationList[i].stations) {
+      return i;
     }
-
+  }
 }
 
+async function apicall(req, res) {
+  const data = req.body;
+  try {
+    const connection = new connect(data);
+    await connection.save();
 
-async function apicall(req,res){
-   
-    const data=req.body;
-    try {
-        const connection=new connect(data);
-        await connection.save();
-        
-        const mapp = await createmap();
-        // console.log(mapp);
-        const id = "68029f9137b3d3732d699890";
-        const newMap=await  mp.findOne({_id:id});
-        newMap.distancemap =mapp;
-        await newMap.save();
-        
-        // await connectionliist();
-        res.json("data saved successfully");
-    } catch (error) {
-        res.json(error);
+    const distancemap = await createmap();
+
+    // Get all maps
+    const allMaps = await mp.find();
+
+    if (allMaps.length > 0) {
+      // If map exists, update the first one (based on 0th index)
+      allMaps[0].distancemap = distancemap;
+      await allMaps[0].save();
+    } else {
+      // If no map exists, create a new one
+      const newMap = new mp({
+        distancemap: distancemap
+      });
+      await newMap.save();
     }
+
+    res.json("Data saved and map updated successfully.");
+  } catch (error) {
+    console.error(error);
+    res.status(500).json("Error while saving connection or updating map.");
+  }
 }
 
-async function createmap(){
-    let lst;
-    let tation;
-    let matrix = [];
-    try {
-        tation = await station.find();
-        const n=tation.length;
-        //    const n = 4;
-           
-           for (let i = 0; i < n; i++) {
-               matrix.push(new Array(n).fill(0));
-           }
-         
-    } catch(error){
-        console.log(error);
-    }
-   
+async function createmap() {
+  let stationsList = [];
+  let connectionList = [];
+  let matrix = [];
 
-    try {
-        const liist=await connect.find();
-        // console.log(liist);
-        lst=liist;
+  try {
+    stationsList = await station.find();
+    const n = stationsList.length;
+
+    for (let i = 0; i < n; i++) {
+      matrix.push(new Array(n).fill(0));
     }
-    catch(error){
-        console.log(error);
+  } catch (err) {
+    console.error("Error fetching stations:", err);
+  }
+
+  try {
+    connectionList = await connect.find();
+  } catch (err) {
+    console.error("Error fetching connections:", err);
+  }
+
+  for (let i = 0; i < connectionList.length; i++) {
+    const a = connectionList[i].sourcestation;
+    const b = connectionList[i].destinationstation;
+    const c = connectionList[i].distance;
+
+    const indexA = indexof(a, stationsList);
+    const indexB = indexof(b, stationsList);
+     if (indexA === undefined || indexB === undefined) {
+      console.warn(`Skipping connection: "${a}" to "${b}" — station not found.`);
+      continue; // skip this iteration
     }
-//   console.log(lst);  
-for(let i = 0; i<lst.length;i++){
-    let a=lst[i].sourcestation;
-    let b=lst[i].destinationstation;
-    let c=lst[i].distance;
-    
-    let indexa=indexof(a,tation);
-    let indexb=indexof(b,tation);
-    
-    matrix[indexa][indexb]=c;
-    matrix[indexb][indexa]=c;
-    
+    matrix[indexA][indexB] = c;
+    matrix[indexB][indexA] = c;
+  }
+
+//   console.log(matrix);
+  return matrix;
 }
-console.log(matrix);
 
-
-return matrix;
-}                       
-
-module.exports=app;
-
-
-
-
+module.exports = app;

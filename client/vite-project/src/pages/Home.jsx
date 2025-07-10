@@ -13,6 +13,7 @@ const Home = () => {
   const [path, setPath] = useState(null)
   const [showPath, setShowPath] = useState(false)
 
+// <<<<<<< Updated upstream
   const pathfinder = async(source, destination) => {
       try {
       const api = "http://localhost:3000/api/findpath"; // 🔁 Use correct URL and correct port (backend)
@@ -29,6 +30,14 @@ const Home = () => {
 
     } catch (error) {
       console.error("API call failed:", error);
+// =======
+//   const handleShowPath = () => {
+//     if (source && destination) {
+//       const foundPath = findShortestPath(source, destination)
+//       console.log(foundPath);
+//       setPath(foundPath)
+//       setShowPath(true)
+// >>>>>>> Stashed changes
     }
   }
 
