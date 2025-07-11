@@ -26,7 +26,7 @@ const StationSelector = ({ source, destination, onSourceChange, onDestinationCha
 
   const apicall = async () => {
     try {
-      const api = "http://localhost:3000/api/getiingstations"; // 🔁 Use correct URL and correct port (backend)
+      const api = "https://metroguide.vercel.app/api/getiingstations"; // 🔁 Use correct URL and correct port (backend)
       const response = await fetch(api, {
         method: "GET",
         headers: {

@@ -16,7 +16,7 @@ const Home = () => {
 // <<<<<<< Updated upstream
   const pathfinder = async(source, destination) => {
       try {
-      const api = "http://localhost:3000/api/findpath"; // 🔁 Use correct URL and correct port (backend)
+      const api = "https://metroguide.vercel.app/api/findpath"; // 🔁 Use correct URL and correct port (backend)
       const response = await fetch(api, {
         method: "POST",
         headers: {
