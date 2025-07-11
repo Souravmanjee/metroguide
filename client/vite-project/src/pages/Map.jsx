@@ -58,7 +58,7 @@ const Map = () => {
           {/* Map Placeholder */}
           <div className="relative bg-white  aspect-[4/3] flex items-center justify-center">
             <div className="text-center">
-              <img src="src/assets/Kolkata_Metro_map.svg"></img>
+              <img src="public/Kolkata_Metro_map.svg"></img>
               <FiMap className="text-6xl text-gray-400 dark:text-gray-500 mx-auto mb-4" />
               {/* <h3 className="text-xl font-semibold text-gray-600 dark:text-gray-400 mb-2">
                 Metro Map Coming Soon
