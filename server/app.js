@@ -13,7 +13,7 @@ const addconnection=require('./routes/addconnection')
 const getconnection=require('./routes/getconnection')
 
 const findpath=require('./routes/findpath')
-
+const Base=require('./routes/Base')
 
 const app= server()
 
@@ -33,6 +33,8 @@ app.use(cors({
 
 // //api
 app.use('/api',addstations);  // api is middlepoint
+
+app.use('',Base);
 
 app.use('/api',gettingstations);
 

@@ -56,15 +56,16 @@ const Map = () => {
           </div>
 
           {/* Map Placeholder */}
-          <div className="relative bg-gray-100 dark:bg-slate-700 aspect-[4/3] flex items-center justify-center">
+          <div className="relative bg-white  aspect-[4/3] flex items-center justify-center">
             <div className="text-center">
+              <img src="src/assets/Kolkata_Metro_map.svg"></img>
               <FiMap className="text-6xl text-gray-400 dark:text-gray-500 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-gray-600 dark:text-gray-400 mb-2">
+              {/* <h3 className="text-xl font-semibold text-gray-600 dark:text-gray-400 mb-2">
                 Metro Map Coming Soon
-              </h3>
-              <p className="text-gray-500 dark:text-gray-500 max-w-md">
+              </h3> */}
+              {/* <p className="text-gray-500 dark:text-gray-500 max-w-md">
                 We're working on bringing you an interactive metro map. For now, you can use our route finder to navigate between stations.
-              </p>
+              </p> */}
             </div>
           </div>
         </motion.div>
