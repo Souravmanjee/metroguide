@@ -149,7 +149,7 @@ const About = () => {
               <div className="text-sm opacity-90">Metro Lines</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">50+</div>
+              <div className="text-3xl font-bold mb-2">60+</div>
               <div className="text-sm opacity-90">Tourist Attractions</div>
             </div>
             <div>
