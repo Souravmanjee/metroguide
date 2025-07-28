@@ -1,38 +1,45 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
 # dependencies
 node_modules/
 
+# build output
+dist/
+build/
+web-build/
+
+# Vite cache
+.vite/
+
 # Expo
 .expo/
-dist/
-web-build/
-expo-env.d.ts
 
-# Native
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
+# environment variables
+.env
+.env.*    # includes .env.local, .env.production, etc.
 
-# Metro
-.metro-health-check*
-
-# debug
+# debug logs
 npm-debug.*
 yarn-debug.*
 yarn-error.*
 
 # macOS
 .DS_Store
-*.pem
 
-# local env files
-.env*.local
+# Windows thumbnail cache
+Thumbs.db
 
-# typescript
+# TypeScript
 *.tsbuildinfo
 
+# Metro bundler health check
+.metro-health-check*
+
+# Misc credentials
+*.pem
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Example app config (if not needed in repo)
 app-example
