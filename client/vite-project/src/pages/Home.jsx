@@ -1,67 +1,55 @@
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
-import { FiSearch, FiMapPin, FiNavigation } from 'react-icons/fi'
-import StationSelector from '../components/StationSelector'
-import PathResult from '../components/PathResult'
-import AttractionCard from '../components/AttractionCard'
-import { findShortestPath } from '../data/metroData'
-import { kolkataAttractions, getAttractionsNearStations } from '../data/attractions'
-import logo from '/metrologo.svg'
-const Home = () => {
-  const [source, setSource] = useState('')
-  const [destination, setDestination] = useState('')
-  const [path, setPath] = useState(null)
-  const [showPath, setShowPath] = useState(false)
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { FiSearch, FiMapPin } from 'react-icons/fi';
+import StationSelector from '../components/StationSelector';
+import PathResult from '../components/PathResult';
+import AttractionCard from '../components/AttractionCard';
+import { findShortestPath } from '../data/metroData';
+import { kolkataAttractions, getAttractionsNearStations } from '../data/attractions';
+import logo from '/metrologo.svg';
 
-  // <<<<<<< Updated upstream
+const Home = () => {
+  const [source, setSource] = useState('');
+  const [destination, setDestination] = useState('');
+  const [path, setPath] = useState(null);
+  const [showPath, setShowPath] = useState(false);
+
   const pathfinder = async (source, destination) => {
     try {
-      const api = "https://metroguide.vercel.app/api/findpath"; // 🔁 Use correct URL and correct port (backend)
+      const api = 'https://metroguide.vercel.app/api/findpath';
       const response = await fetch(api, {
-        method: "POST",
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json"
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({ source, destination })
       });
 
       const data = await response.json();
       return data;
-
     } catch (error) {
-      console.error("API call failed:", error);
-      // =======
-      //   const handleShowPath = () => {
-      //     if (source && destination) {
-      //       const foundPath = findShortestPath(source, destination)
-      //       console.log(foundPath);
-      //       setPath(foundPath)
-      //       setShowPath(true)
-      // >>>>>>> Stashed changes
+      console.error('API call failed:', error);
     }
-  }
+  };
 
   const handleShowPath = async () => {
     const foundPath = await pathfinder(source, destination);
 
     if (foundPath && Array.isArray(foundPath)) {
-      const stationNamesOnly = foundPath;
-      console.log('Station path:', stationNamesOnly);
-      setPath(stationNamesOnly);
+      setPath(foundPath);
       setShowPath(true);
     }
-  }
-  const handleReset = () => {
-    setSource('')
-    setDestination('')
-    setPath(null)
-    setShowPath(false)
-  }
+  };
 
-  // Get attractions based on current route or show all
-  const relevantAttractions = showPath && path
-    ? getAttractionsNearStations(path)
-    : kolkataAttractions
+  const handleReset = () => {
+    setSource('');
+    setDestination('');
+    setPath(null);
+    setShowPath(false);
+  };
+
+  const relevantAttractions =
+    showPath && path ? getAttractionsNearStations(path) : kolkataAttractions;
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -71,12 +59,12 @@ const Home = () => {
         staggerChildren: 0.1
       }
     }
-  }
+  };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 }
-  }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
@@ -182,9 +170,8 @@ const Home = () => {
                 </div>
                 <p className="text-gray-600 dark:text-gray-400">
                   {showPath && path
-                    ? Discover amazing places near the stations in your route from ${source} to ${destination}.
-                    : 'Explore the rich cultural heritage and famous landmarks of Kolkata.'
-                  }
+                    ? `Discover amazing places near the stations in your route from ${source} to ${destination}.`
+                    : 'Explore the rich cultural heritage and famous landmarks of Kolkata.'}
                 </p>
               </motion.div>
 
@@ -218,7 +205,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

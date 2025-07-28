@@ -15,6 +15,7 @@ const Map = () => {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-slate-900 py-8">
       <div className="max-w-7xl mx-auto px-4">
+
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -92,9 +93,9 @@ const Map = () => {
             ].map((line) => (
               <div
                 key={line.name}
-                className={flex items-center gap-3 p-3 bg-${line.color}-50 dark:bg-${line.color}-900/20 rounded-lg}
+                className={`flex items-center gap-3 p-3 bg-${line.color}-50 dark:bg-${line.color}-900/20 rounded-lg`}
               >
-                <div className={w-4 h-4 bg-${line.color}-500 rounded-full}></div>
+                <div className={`w-4 h-4 bg-${line.color}-500 rounded-full`}></div>
                 <div>
                   <div className="font-medium text-gray-900 dark:text-white">{line.name}</div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">{line.desc}</div>
@@ -132,9 +133,16 @@ const Map = () => {
               key={index}
               className="bg-white dark:bg-slate-800 rounded-xl p-6 border border-gray-200 dark:border-slate-700 text-center"
             >
-              <div className="w-12 h-12 bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4"
-                style={{ backgroundColor: feature.icon.props.className.includes('blue') ? '#cce4f6' :
-                        feature.icon.props.className.includes('green') ? '#d1f3db' : '#e6d9f7' }}>
+              <div
+                className="w-12 h-12 bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4"
+                style={{
+                  backgroundColor: feature.icon.props.className.includes('blue')
+                    ? '#cce4f6'
+                    : feature.icon.props.className.includes('green')
+                    ? '#d1f3db'
+                    : '#e6d9f7'
+                }}
+              >
                 {feature.icon}
               </div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
