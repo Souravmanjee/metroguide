@@ -120,10 +120,10 @@ const About = () => {
           <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Our Mission</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed">
-              {/* MetroGuide was created to simplify metro travel in Kolkata by providing accurate route information,
+               MetroGuide was created to simplify metro travel in Kolkata by providing accurate route information,
               real-time pathfinding, and local attraction recommendations. We believe that public transportation
               should be accessible, efficient, and enjoyable for everyone - from daily commuters to tourists
-              exploring the city's rich cultural heritage. */}
+              exploring the city's rich cultural heritage. 
             </p>
           </div>
         </motion.div>
