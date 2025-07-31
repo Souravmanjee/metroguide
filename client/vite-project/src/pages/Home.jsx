@@ -93,7 +93,7 @@ const Home = () => {
               MetroGuide
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Your smart companion for navigating Kolkata's metro system. find the shortest routes and discover amazing places along the way.
+              Your smart companion for navigating Kolkata's metro system. Find the shortest routes and discover amazing places along the way.
             </p>
           </motion.div>
         </div>
