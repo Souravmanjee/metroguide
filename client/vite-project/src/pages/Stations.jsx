@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FiSearch, FiMapPin, FiClock, FiCheckCircle } from 'react-icons/fi'
-import { metroLines, underConstructionStations, getAllStationsWithStatus, getStationLineWithStatus, getMetroStats } from '../data/metroData'
+import { stationsPageMetroLines, stationsPageUnderConstruction, getStationsPageAllStations, getStationsPageStationLineWithStatus, getStationsPageMetroStats } from '../data/stationsPageData'
 
 const Stations = () => {
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedLine, setSelectedLine] = useState('all')
   const [showStatus, setShowStatus] = useState('all') // all, operational, under_construction
 
-  const allStationsWithStatus = getAllStationsWithStatus()
-  const stats = getMetroStats()
+  const allStationsWithStatus = getStationsPageAllStations()
+  const stats = getStationsPageMetroStats()
   
   const filteredStations = allStationsWithStatus.filter(station => {
     const matchesSearch = station.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -36,8 +36,8 @@ const Stations = () => {
 
   // Get all lines including under construction
   const allLines = [
-    ...Object.keys(metroLines),
-    ...Object.keys(underConstructionStations)
+    ...Object.keys(stationsPageMetroLines),
+    ...Object.keys(stationsPageUnderConstruction)
   ]
 
   return (

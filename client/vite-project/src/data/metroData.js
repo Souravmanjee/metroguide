@@ -1,50 +1,53 @@
-// Comprehensive Kolkata Metro Network Data
+// Kolkata Metro Network Data for Pathfinding
 export const metroLines = {
   'Blue Line (Line 1)': {
     color: '#2563eb',
     stations: [
-      'Dakshineswar', 'Baranagar', 'Shyama Charan', 'Shyambazar', 'Sovabazar-Sutanuti',
-      'Girish Park', 'Mahatma Gandhi Road', 'Central', 'Chandni Chowk', 'Park Street',
-      'Maidan', 'Rabindra Sadan', 'Kalighat', 'Jatin Das Park', 'Rabindra Sarobar',
-      'Tollygunge', 'Mahanayak Uttam Kumar', 'Netaji', 'Masterda Surya Sen', 'Bansdroni',
-      'Sakher Bazar', 'Garia Bazar', 'Kavi Nazrul', 'New Garia'
+      'Dakshineswar', 'Baranagar', 'Dum Dum', 'Noapara', 'Belgachia', 'Shyambazar', 
+      'Shobhabazar-Sutanuti', 'Girish Park', 'Mahatma Gandhi Road', 'Central', 
+      'Chandni Chowk', 'Esplanade', 'Park Street', 'Maidan', 'Rabindra Sadan', 
+      'Netaji Bhavan', 'Jatin Das Park', 'Kalighat', 'Rabindra Sarobar', 'Mahanayak Uttam Kumar', 
+      'Tollygunge', 'Netaji', 'Masterda Surya Sen', 'Gitanjali', 'Kavi Nazrul', 
+      'Shahid Khudiram', 'Kavi Subhash', 'Hemanta Mukhopadhyay', 'New Garia'
     ]
   },
   'Green Line (Line 2)': {
     color: '#16a34a',
     stations: [
-      'Howrah Maidan', 'Howrah', 'Mahakaran', 'Esplanade', 'Sealdah'
+      'Howrah Maidan', 'Howrah', 'Mahakaran', 'Esplanade', 'Park Street', 'Maidan', 
+      'Rabindra Sadan', 'Netaji Bhavan', 'Jatin Das Park', 'Kalighat', 'Rabindra Sarobar', 
+      'Mahanayak Uttam Kumar', 'Tollygunge', 'Netaji', 'Masterda Surya Sen', 'Gitanjali', 
+      'Kavi Nazrul', 'Shahid Khudiram', 'Kavi Subhash', 'Hemanta Mukhopadhyay', 'New Garia'
     ]
   },
   'Purple Line (Line 3)': {
     color: '#9333ea',
     stations: [
-      'Joka', 'Thakurpukur', 'Sakher Bazar', 'Behala Chowrasta', 'Behala Bazar',
-      'New Alipore', 'Jatin Das Park', 'Kalighat', 'Rabindra Sadan', 'Maidan',
-      'Park Street', 'Chandni Chowk', 'Central', 'Mahatma Gandhi Road', 'Girish Park',
-      'Shobhabazar-Sutanuti', 'Shyambazar', 'Shyama Charan', 'Baranagar', 'Dakshineswar'
+      'Joka', 'Thakurpukur', 'Sakher Bazar', 'Behala Chowrasta', 'Behala Bazar', 
+      'New Alipore', 'Jatin Das Park', 'Kalighat', 'Rabindra Sadan', 'Maidan', 
+      'Park Street', 'Esplanade', 'Central', 'Mahatma Gandhi Road', 'Girish Park', 
+      'Shobhabazar-Sutanuti', 'Shyambazar', 'Belgachia', 'Dum Dum', 'Noapara', 'Baranagar', 'Dakshineswar'
     ]
   },
   'Orange Line (Line 4)': {
     color: '#ea580c',
     stations: [
-      'New Town', 'Baguiati', 'Jessore Road', 'Dum Dum Cantonment', 'Dum Dum',
-      'Belgachia', 'Shyama Charan', 'Shyambazar', 'Sovabazar-Sutanuti', 'Girish Park',
-      'Mahatma Gandhi Road', 'Central', 'Chandni Chowk', 'Park Street', 'Maidan',
-      'Rabindra Sadan', 'Kalighat'
+      'Noapara', 'Baranagar', 'Dum Dum', 'Belgachia', 'Shyambazar', 'Shobhabazar-Sutanuti', 
+      'Girish Park', 'Mahatma Gandhi Road', 'Central', 'Esplanade', 'Park Street', 
+      'Maidan', 'Rabindra Sadan', 'Netaji Bhavan', 'Jatin Das Park', 'Kalighat'
     ]
   },
   'Red Line (Line 5)': {
     color: '#dc2626',
     stations: [
-      'Sector V', 'Karunamoyee', 'Central Park', 'City Centre', 'Bengal Chemical',
+      'Sector V', 'Karunamoyee', 'Central Park', 'City Centre', 'Bengal Chemical', 
       'Salt Lake Stadium', 'Phool Bagan', 'Sealdah'
     ]
   },
   'Pink Line (Line 6)': {
     color: '#ec4899',
     stations: [
-      'Hemanta Mukhopadhyay', 'Kavi Subhash', 'Gitanjali', 'Khudiram',
+      'Hemanta Mukhopadhyay', 'Kavi Subhash', 'Gitanjali', 'Kavi Nazrul', 
       'Shahid Khudiram', 'Netaji', 'Masterda Surya Sen'
     ]
   }
@@ -55,55 +58,41 @@ export const underConstructionStations = {
   'Blue Line Extension': {
     color: '#2563eb',
     stations: [
-      'Noapara', 'Barasat', 'Kazipara', 'Madhyamgram'
+      'Barasat', 'Kazipara', 'Madhyamgram', 'Biman Bandar', 'Airport Gate 1', 'Airport Gate 2'
     ]
   },
   'Green Line Extension': {
     color: '#16a34a',
     stations: [
-      'Phoolbagan', 'Sealdah North', 'Ultadanga', 'Bidhannagar Road',
-      'Bidhannagar', 'New Town Bus Stand', 'Hidco More', 'Teghoria',
-      'Biman Bandar', 'Netaji Subhash Chandra Bose International Airport'
+      'Phoolbagan', 'Sealdah North', 'Ultadanga', 'Bidhannagar Road', 'Bidhannagar', 
+      'New Town Bus Stand', 'Hidco More', 'Teghoria', 'Biman Bandar', 
+      'Netaji Subhash Chandra Bose International Airport'
     ]
   },
   'Purple Line Extension': {
     color: '#9333ea',
     stations: [
-      'Taratala', 'Majerhat', 'Joka Extension'
+      'Taratala', 'Majerhat', 'Joka Extension', 'Behala Chowrasta Extension'
     ]
   },
   'Orange Line Extension': {
     color: '#ea580c',
     stations: [
-      'Noapara Extension', 'Barasat Extension'
+      'Noapara Extension', 'Barasat Extension', 'Dum Dum Extension'
     ]
   },
   'Red Line Extension': {
     color: '#dc2626',
     stations: [
-      'Howrah Maidan Extension', 'Shalimar', 'Santragachi',
-      'Andul', 'Sankrail', 'Dankuni', 'Begampur'
+      'Howrah Maidan Extension', 'Shalimar', 'Santragachi', 'Andul', 'Sankrail', 
+      'Dankuni', 'Begampur', 'Uluberia', 'Howrah Station'
     ]
   },
   'Pink Line Extension': {
     color: '#ec4899',
     stations: [
-      'Dum Dum Park', 'Nagerbazar', 'Agarpara', 'Sodepur',
-      'Khardaha', 'Titagarh', 'Barrackpore', 'Naihati'
-    ]
-  },
-  'Yellow Line (Line 7)': {
-    color: '#eab308',
-    stations: [
-      'Esplanade', 'Bowbazar', 'Sealdah', 'Phoolbagan', 'Maniktala',
-      'Ultadanga', 'Bidhannagar Road', 'Bidhannagar', 'New Town'
-    ]
-  },
-  'Brown Line (Line 8)': {
-    color: '#a16207',
-    stations: [
-      'Diamond Harbour Road', 'Thakurpukur', 'Behala', 'Taratala',
-      'Majerhat', 'Chetla', 'Kalighat'
+      'Dum Dum Park', 'Nagerbazar', 'Agarpara', 'Sodepur', 'Khardaha', 'Titagarh', 
+      'Barrackpore', 'Naihati', 'Kanchrapara', 'Halisahar', 'Chandan Nagar', 'Bhadreswar', 'Champdani', 'Chandannagar'
     ]
   }
 }
@@ -112,51 +101,65 @@ export const underConstructionStations = {
 export const stationConnections = {
   // Blue Line
   'Dakshineswar': ['Baranagar'],
-  'Baranagar': ['Dakshineswar', 'Shyama Charan'],
-  'Shyama Charan': ['Baranagar', 'Shyambazar', 'Belgachia'],
-  'Shyambazar': ['Shyama Charan', 'Sovabazar-Sutanuti'],
-  'Sovabazar-Sutanuti': ['Shyambazar', 'Girish Park'],
-  'Girish Park': ['Sovabazar-Sutanuti', 'Mahatma Gandhi Road'],
+  'Baranagar': ['Dakshineswar', 'Noapara'],
+  'Noapara': ['Baranagar', 'Dum Dum'],
+  'Dum Dum': ['Noapara', 'Belgachia'],
+  'Belgachia': ['Dum Dum', 'Shyambazar'],
+  'Shyambazar': ['Belgachia', 'Shobhabazar-Sutanuti'],
+  'Shobhabazar-Sutanuti': ['Shyambazar', 'Girish Park'],
+  'Girish Park': ['Shobhabazar-Sutanuti', 'Mahatma Gandhi Road'],
   'Mahatma Gandhi Road': ['Girish Park', 'Central'],
-  'Central': ['Mahatma Gandhi Road', 'Chandni Chowk', 'Mahakaran'],
+  'Central': ['Mahatma Gandhi Road', 'Chandni Chowk', 'Esplanade'],
   'Chandni Chowk': ['Central', 'Park Street'],
-  'Park Street': ['Chandni Chowk', 'Maidan'],
-  'Maidan': ['Park Street', 'Rabindra Sadan', 'Esplanade'],
-  'Rabindra Sadan': ['Maidan', 'Kalighat'],
-  'Kalighat': ['Rabindra Sadan', 'Jatin Das Park'],
-  'Jatin Das Park': ['Kalighat', 'Rabindra Sarobar', 'New Alipore'],
-  'Rabindra Sarobar': ['Jatin Das Park', 'Tollygunge'],
-  'Tollygunge': ['Rabindra Sarobar', 'Mahanayak Uttam Kumar'],
-  'Mahanayak Uttam Kumar': ['Tollygunge', 'Netaji'],
-  'Netaji': ['Mahanayak Uttam Kumar', 'Masterda Surya Sen', 'Hemanta Mukhopadhyay'],
-  'Masterda Surya Sen': ['Netaji', 'Bansdroni', 'Shahid Khudiram'],
-  'Bansdroni': ['Masterda Surya Sen', 'Sakher Bazar'],
-  'Sakher Bazar': ['Bansdroni', 'Garia Bazar', 'Thakurpukur'],
-  'Garia Bazar': ['Sakher Bazar', 'Kavi Nazrul'],
-  'Kavi Nazrul': ['Garia Bazar', 'New Garia'],
-  'New Garia': ['Kavi Nazrul'],
+  'Esplanade': ['Central', 'Maidan', 'Park Street'],
+  'Park Street': ['Chandni Chowk', 'Esplanade', 'Maidan'],
+  'Maidan': ['Park Street', 'Esplanade', 'Rabindra Sadan'],
+  'Rabindra Sadan': ['Maidan', 'Netaji Bhavan'],
+  'Netaji Bhavan': ['Rabindra Sadan', 'Jatin Das Park'],
+  'Jatin Das Park': ['Netaji Bhavan', 'Kalighat'],
+  'Kalighat': ['Jatin Das Park', 'Rabindra Sarobar'],
+  'Rabindra Sarobar': ['Kalighat', 'Mahanayak Uttam Kumar'],
+  'Mahanayak Uttam Kumar': ['Rabindra Sarobar', 'Tollygunge'],
+  'Tollygunge': ['Mahanayak Uttam Kumar', 'Netaji'],
+  'Netaji': ['Tollygunge', 'Masterda Surya Sen'],
+  'Masterda Surya Sen': ['Netaji', 'Gitanjali'],
+  'Gitanjali': ['Masterda Surya Sen', 'Kavi Nazrul'],
+  'Kavi Nazrul': ['Gitanjali', 'Shahid Khudiram'],
+  'Shahid Khudiram': ['Kavi Nazrul', 'Kavi Subhash'],
+  'Kavi Subhash': ['Shahid Khudiram', 'Hemanta Mukhopadhyay'],
+  'Hemanta Mukhopadhyay': ['Kavi Subhash', 'New Garia'],
+  'New Garia': ['Hemanta Mukhopadhyay'],
   
   // Green Line
   'Howrah Maidan': ['Howrah'],
   'Howrah': ['Howrah Maidan', 'Mahakaran'],
-  'Mahakaran': ['Howrah', 'Central', 'Esplanade'],
-  'Esplanade': ['Mahakaran', 'Maidan', 'Sealdah'],
-  'Sealdah': ['Esplanade', 'Phool Bagan'],
+  'Mahakaran': ['Howrah', 'Esplanade'],
   
-  // Purple Line extensions
+  // Purple Line
   'Joka': ['Thakurpukur'],
   'Thakurpukur': ['Joka', 'Sakher Bazar'],
+  'Sakher Bazar': ['Thakurpukur', 'Behala Chowrasta'],
   'Behala Chowrasta': ['Sakher Bazar', 'Behala Bazar'],
   'Behala Bazar': ['Behala Chowrasta', 'New Alipore'],
   'New Alipore': ['Behala Bazar', 'Jatin Das Park'],
   
   // Orange Line
-  'New Town': ['Baguiati'],
-  'Baguiati': ['New Town', 'Jessore Road'],
-  'Jessore Road': ['Baguiati', 'Dum Dum Cantonment'],
-  'Dum Dum Cantonment': ['Jessore Road', 'Dum Dum'],
-  'Dum Dum': ['Dum Dum Cantonment', 'Belgachia'],
-  'Belgachia': ['Dum Dum', 'Shyama Charan'],
+  'Noapara': ['Baranagar'],
+  'Baranagar': ['Noapara', 'Dum Dum'],
+  'Dum Dum': ['Baranagar', 'Belgachia'],
+  'Belgachia': ['Dum Dum', 'Shyambazar'],
+  'Shyambazar': ['Belgachia', 'Shobhabazar-Sutanuti'],
+  'Shobhabazar-Sutanuti': ['Shyambazar', 'Girish Park'],
+  'Girish Park': ['Shobhabazar-Sutanuti', 'Mahatma Gandhi Road'],
+  'Mahatma Gandhi Road': ['Girish Park', 'Central'],
+  'Central': ['Mahatma Gandhi Road', 'Esplanade'],
+  'Esplanade': ['Central', 'Park Street'],
+  'Park Street': ['Esplanade', 'Maidan'],
+  'Maidan': ['Park Street', 'Rabindra Sadan'],
+  'Rabindra Sadan': ['Maidan', 'Netaji Bhavan'],
+  'Netaji Bhavan': ['Rabindra Sadan', 'Jatin Das Park'],
+  'Jatin Das Park': ['Netaji Bhavan', 'Kalighat'],
+  'Kalighat': ['Jatin Das Park'],
 
   // Red Line
   'Sector V': ['Karunamoyee'],
@@ -166,13 +169,16 @@ export const stationConnections = {
   'Bengal Chemical': ['City Centre', 'Salt Lake Stadium'],
   'Salt Lake Stadium': ['Bengal Chemical', 'Phool Bagan'],
   'Phool Bagan': ['Salt Lake Stadium', 'Sealdah'],
+  'Sealdah': ['Phool Bagan'],
 
   // Pink Line
-  'Hemanta Mukhopadhyay': ['Netaji', 'Kavi Subhash'],
+  'Hemanta Mukhopadhyay': ['Kavi Subhash'],
   'Kavi Subhash': ['Hemanta Mukhopadhyay', 'Gitanjali'],
-  'Gitanjali': ['Kavi Subhash', 'Khudiram'],
-  'Khudiram': ['Gitanjali', 'Shahid Khudiram'],
-  'Shahid Khudiram': ['Khudiram', 'Masterda Surya Sen']
+  'Gitanjali': ['Kavi Subhash', 'Kavi Nazrul'],
+  'Kavi Nazrul': ['Gitanjali', 'Shahid Khudiram'],
+  'Shahid Khudiram': ['Kavi Nazrul', 'Netaji'],
+  'Netaji': ['Shahid Khudiram', 'Masterda Surya Sen'],
+  'Masterda Surya Sen': ['Netaji']
 }
 
 // Get all unique operational stations
@@ -279,9 +285,9 @@ export const getLineChanges = (path) => {
   
   for (let i = 1; i < path.length; i++) {
     const stationLine = getStationLine(path[i])
-    if (stationLine && currentLine && stationLine.name !== currentLine.name) {
+    if (stationLine && stationLine.name !== currentLine?.name) {
       changes.push({
-        station: path[i - 1],
+        station: path[i],
         fromLine: currentLine,
         toLine: stationLine
       })
@@ -320,7 +326,7 @@ export const getMetroStats = () => {
   }
 }
 
-// Check if station is operational
+// Check if a station is operational
 export const isStationOperational = (stationName) => {
   return getAllStations().includes(stationName)
 }

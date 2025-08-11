@@ -504,16 +504,24 @@ export const kolkataAttractions = [
     nearbyStations: ["Central", "Chandni Chowk"],
     image: "https://hblimg.mmtcdn.com/content/hubble/img/ttd_images/mmt/activities/t_ufs/m_Hoshiarpur_Gurudwara_sahib_shaheedan-ladhewal_1_l_480_640.jpg",
     category: "Religious"
-  }
+  },
+
+
+
 ]
 
 // Get attractions near specific stations
 export const getAttractionsNearStations = (stations) => {
   if (!stations || stations.length === 0) return kolkataAttractions
   
+  // Extract station names from path objects (which have a 'stations' property)
+  const stationNames = stations.map(station => 
+    typeof station === 'string' ? station : station.stations
+  )
+  
   return kolkataAttractions.filter(attraction =>
     attraction.nearbyStations.some(station =>
-      stations.includes(station)
+      stationNames.includes(station)
     )
   )
 }
