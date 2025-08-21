@@ -176,7 +176,7 @@ const Home = () => {
               </motion.div>
 
               <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-                {relevantAttractions.slice(0, 9).map((attraction, index) => (
+                {relevantAttractions.map((attraction, index) => (
                   <AttractionCard
                     key={attraction.id}
                     attraction={attraction}
