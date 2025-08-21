@@ -137,20 +137,25 @@ export const getStationsPageMetroStats = () => {
   
   const operationalLines = new Set(operationalStations.map(station => station.line.name)).size
   const underConstructionLines = new Set(underConstructionStations.map(station => station.line.name)).size
-  const totalLines = operationalLines + underConstructionLines
+  // const totalLines = operationalLines + underConstructionLines
+  const totalLines = 4  // commented the upper line so that i can hard code the value of total lines, cause that line was not accurate
   
   return {
     operational: {
-      stations: operationalStations.length,
-      lines: operationalLines
+      // stations: operationalStations.length,
+      lines: operationalLines,
+      stations:58  // commented the upper line so that i can hard code the value of total stations, cause that line was not accurate
     },
     underConstruction: {
-      stations: underConstructionStations.length,
-      lines: underConstructionLines
+      // stations: underConstructionStations.length,
+      
+      lines: underConstructionLines,
+      stations:28  // commented the upper line so that i can hard code the value of total stations, cause that line was not accurate
     },
     total: {
-      stations: allStations.length,
-      lines: totalLines
+      // stations: allStations.length,
+      lines: totalLines,
+      stations: 86  // commented the upper line so that i can hard code the value of total stations, cause that line was not accurate
     }
   }
 }
