@@ -50,10 +50,11 @@ const Stations = () => {
           className="text-center mb-12"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Metro Stations
+          <span className="relative z-10 bg-gradient-to-r from-red-400 via-red-600 to-red-500 bg-clip-text text-transparent">Metro Stations</span>
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Explore all metro stations across Kolkata's extensive network, including upcoming stations
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto font-bold"
+              style={{fontFamily: "'Nothing You Could Do', cursive"}}>
+            <span className="relative z-10 text-blue-500">Explore all metro stations</span> across Kolkata's extensive network, <span className="relative z-10 text-blue-500">including upcoming stations</span>
           </p>
         </motion.div>
 

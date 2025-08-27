@@ -24,7 +24,7 @@ const Navbar = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-gray-200 dark:border-slate-700"
+      className="fixed top-0 left-0 right-0 z-50 rounded-xl bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-gray-200 dark:border-slate-700"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -36,7 +36,7 @@ const Navbar = () => {
               alt="MetroGuide Logo"
               className="h-12 w-12 md:h-14 md:w-14 object-contain"
             />
-            <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-xl font-bold bg-gradient-to-r from-red-400 via-red-600 to-red-500 bg-clip-text text-transparent">
               MetroGuide
             </span>
           </Link>

@@ -37,10 +37,11 @@ const RegionalPlaces = () => {
           className="text-center mb-12"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Regional Places
+          <span className="relative z-10 bg-gradient-to-r from-red-400 via-red-600 to-red-500 bg-clip-text text-transparent">Regional Places</span>
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Discover the rich cultural heritage and famous landmarks of Kolkata, all accessible via metro
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto font-bold"
+              style={{fontFamily: "'Nothing You Could Do', cursive"}}>
+            Discover the <span className="relative z-10 text-blue-500">rich cultural heritage </span>and famous landmarks of Kolkata, all accessible via metro
           </p>
         </motion.div>
 

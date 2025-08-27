@@ -23,10 +23,11 @@ const Map = () => {
           className="text-center mb-12"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Metro Network Map
+          <span className="relative z-10 bg-gradient-to-r from-red-400 via-red-600 to-red-500 bg-clip-text text-transparent">Metro Network Map</span>
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Complete visual guide to Kolkata's metro system with all lines and stations
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto font-bold"
+              style={{fontFamily: "'Nothing You Could Do', cursive"}}>
+            Complete visual guide to <span className="relative z-10 text-blue-500">Kolkata's metro system with all lines and stations</span>
           </p>
         </motion.div>
 

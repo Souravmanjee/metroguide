@@ -89,12 +89,44 @@ const Home = () => {
               />
             </div>
 
-            <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent mb-4">
+            <h1
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold mb-6 leading-tight bg-gradient-to-r from-black via-orange-500 to-black bg-clip-text text-transparent"
+              style={{ fontFamily: "'Caveat', cursive" }}
+            >
               MetroGuide
             </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Your smart companion for navigating Kolkata's metro system. Find the shortest routes and discover amazing places along the way.
-            </p>
+            <p
+  className="text-3xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed"
+  style={{ fontFamily: "'Caveat', cursive" }}
+>
+  Your smart companion for navigating Kolkata's metro system.
+    <span className="relative z-10 text-blue-500"> the shortest routes </span> 
+    <span>and </span>
+  {/* Premium underline: discover amazing places along the way */}
+  <span className="relative inline-block">
+    <span className="relative z-10">discover amazing places along the way</span>
+    <svg
+      className="absolute left-0 bottom-0 w-full h-full -z-0"
+      viewBox="0 0 400 60"
+      preserveAspectRatio="none"
+    >
+      <path
+        d="M10 50 Q 160 25, 300 40 T 390 50"
+        stroke="url(#gradient2)"
+        strokeWidth="10"
+        strokeLinecap="round"
+        fill="none"
+      />
+      <defs>
+        <linearGradient id="gradient2" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stopColor="#4facfe" />
+          <stop offset="100%" stopColor="#00f2fe" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </span>
+</p>
+
           </motion.div>
         </div>
       </motion.section>

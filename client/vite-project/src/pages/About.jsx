@@ -103,10 +103,12 @@ const About = () => {
             />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            About MetroGuide
+            <span className="relative z-10 bg-gradient-to-r from-red-400 via-red-600 to-red-500 to-gray-500 bg-clip-text text-transparent">About MetroGuide</span>
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Your smart companion for navigating Kolkata's metro system, designed to make your journey easier and more enjoyable.
+          <p className=" text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-bold"
+             style={{fontFamily: "'Nothing You Could Do', cursive"}}
+             >
+            your <span className="relative z-10 text-blue-500">smart companion</span> for navigating Kolkata's metro system, <span className="relative z-10 text-blue-500">designed to make your journey easier and more enjoyable.</span>
           </p>
         </motion.div>
 
@@ -119,11 +121,13 @@ const About = () => {
         >
           <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Our Mission</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed">
-               MetroGuide was created to simplify metro travel in Kolkata by providing accurate route information,
-              real-time pathfinding, and local attraction recommendations. We believe that public transportation
-              should be accessible, efficient, and enjoyable for everyone - from daily commuters to tourists
-              exploring the city's rich cultural heritage. 
+            <p className="text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed font-bold"
+              style={{fontFamily: "'Nothing You Could Do', cursive"}}
+              >
+               MetroGuide was created to simplify metro travel in Kolkata by <span className="relative z-10 text-orange-500">providing accurate route information</span>,
+              <span className="relative z-10 text-orange-500">real-time pathfinding</span>, and <span className="relative z-10 text-orange-500">local attraction recommendations</span>. We believe that public transportation
+              should be <span className="relative z-10 text-orange-500">accessible, efficient, and enjoyable</span> for everyone - from daily commuters to tourists
+              exploring the city's <span className="relative z-10 text-orange-500">rich cultural heritage</span>. 
             </p>
           </div>
         </motion.div>
@@ -137,7 +141,7 @@ const About = () => {
         >
           <motion.div variants={itemVariants} className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              What Makes Us Special
+              What Makes Us <span className="relative z-10 text-yellow-500">Special</span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               Discover the features that make MetroGuide your perfect travel companion
@@ -152,7 +156,7 @@ const About = () => {
                 whileHover={{ y: -5, scale: 1.02 }}
                 className="bg-white dark:bg-slate-800 rounded-xl p-6 border border-gray-200 dark:border-slate-700 shadow-sm hover:shadow-lg transition-all duration-200"
               >
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-orange-600 rounded-lg flex items-center justify-center mb-4">
                   <feature.icon className="text-white text-xl" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
@@ -171,7 +175,7 @@ const About = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl p-8 mb-12 text-white"
+          className="bg-gradient-to-r from-black via-yellow-700 to-black-300 rounded-xl p-8 mb-12 text-white"
         >
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold mb-4">MetroGuide by Numbers</h2>
@@ -362,7 +366,7 @@ const About = () => {
           </div>
         </motion.div>
 
-
+                
       </div>
     </div>
   )

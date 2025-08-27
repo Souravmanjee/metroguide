@@ -58,7 +58,8 @@ const StationSelector = ({ source, destination, onSourceChange, onDestinationCha
       animate={{ opacity: 1, y: 0 }}
       className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-slate-700"
     >
-      <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+      <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center"
+      >
         Find Your Metro Route
       </h2>
 

@@ -155,7 +155,7 @@ export const getStationsPageMetroStats = () => {
     total: {
       // stations: allStations.length,
       lines: totalLines,
-      stations: 86  // commented the upper line so that i can hard code the value of total stations, cause that line was not accurate
+      stations: 86  // commented the upper line so that i can hard code the value of total stations, cause that line was not accurate 
     }
   }
 }
