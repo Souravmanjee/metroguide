@@ -46,7 +46,7 @@ const PathResult = ({ path, source, destination }) => {
       className="bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-gray-200 dark:border-slate-700 overflow-hidden"
     >
       {/* Header */}
-      <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-6 text-white">
+      <div className="bg-gradient-to-r from-orange-500 to-red-500 p-6 text-white">
         <h3 className="text-xl font-bold mb-2">Route Found!</h3>
         <div className="flex flex-wrap gap-4 text-sm">
           <div className="flex items-center gap-2">
