@@ -7,6 +7,7 @@ import Stations from './pages/Stations'
 import Map from './pages/Map'
 import RegionalPlaces from './pages/RegionalPlaces'
 import About from './pages/About'
+import Footer from './pages/Footer'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route path="/about" element={<About />} />
             </Routes>
           </main>
+          <Footer/>
         </div>
       </Router>
     </ThemeProvider>
