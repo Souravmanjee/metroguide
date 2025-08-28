@@ -39,7 +39,7 @@ const Map = () => {
           className="bg-white dark:bg-slate-800 rounded-xl shadow-2xl overflow-hidden border border-gray-200 dark:border-slate-700"
         >
           {/* Map Header */}
-          <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-6 text-white">
+          <div className="bg-gradient-to-r from-red-500 to-red-600 p-6 text-white">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div>
                 <h2 className="text-2xl font-bold mb-2">Kolkata Metro Network</h2>
