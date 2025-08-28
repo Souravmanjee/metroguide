@@ -127,7 +127,7 @@ const RegionalPlaces = () => {
           transition={{ delay: 0.4 }}
           className="mt-12"
         >
-          <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl p-6 text-white">
+          <div className="bg-gradient-to-r from-orange-400 to-red-600 rounded-xl p-6 text-white">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
               {categories.map(category => {
                 const count = getAttractionsByCategory(category).length
