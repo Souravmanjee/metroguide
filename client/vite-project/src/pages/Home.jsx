@@ -13,6 +13,7 @@ const Home = () => {
   const [destination, setDestination] = useState('');
   const [path, setPath] = useState(null);
   const [showPath, setShowPath] = useState(false);
+  const [showAll, setShowAll] = useState(false); // ✅ new state
 
   const pathfinder = async (source, destination) => {
     try {
@@ -46,6 +47,7 @@ const Home = () => {
     setDestination('');
     setPath(null);
     setShowPath(false);
+    setShowAll(false); // ✅ reset see more when reset
   };
 
   const relevantAttractions =
@@ -96,37 +98,36 @@ const Home = () => {
               MetroGuide
             </h1>
             <p
-  className="text-3xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed"
-  style={{ fontFamily: "'Caveat', cursive" }}
->
-  Your smart companion for navigating Kolkata's metro system.
-    <span className="relative z-10 text-blue-500"> the shortest routes </span> 
-    <span>and </span>
-  {/* Premium underline: discover amazing places along the way */}
-  <span className="relative inline-block">
-    <span className="relative z-10">discover amazing places along the way</span>
-    <svg
-      className="absolute left-0 bottom-0 w-full h-full -z-0"
-      viewBox="0 0 400 60"
-      preserveAspectRatio="none"
-    >
-      <path
-        d="M10 50 Q 160 25, 300 40 T 390 50"
-        stroke="url(#gradient2)"
-        strokeWidth="10"
-        strokeLinecap="round"
-        fill="none"
-      />
-      <defs>
-        <linearGradient id="gradient2" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stopColor="#4facfe" />
-          <stop offset="100%" stopColor="#00f2fe" />
-        </linearGradient>
-      </defs>
-    </svg>
-  </span>
-</p>
-
+              className="text-3xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed"
+              style={{ fontFamily: "'Caveat', cursive" }}
+            >
+              Your smart companion for navigating Kolkata's metro system.
+              <span className="relative z-10 text-blue-500"> the shortest routes </span> 
+              <span>and </span>
+              {/* Premium underline: discover amazing places along the way */}
+              <span className="relative inline-block">
+                <span className="relative z-10">discover amazing places along the way</span>
+                <svg
+                  className="absolute left-0 bottom-0 w-full h-full -z-0"
+                  viewBox="0 0 400 60"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M10 50 Q 160 25, 300 40 T 390 50"
+                    stroke="url(#gradient2)"
+                    strokeWidth="10"
+                    strokeLinecap="round"
+                    fill="none"
+                  />
+                  <defs>
+                    <linearGradient id="gradient2" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stopColor="#4facfe" />
+                      <stop offset="100%" stopColor="#00f2fe" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </span>
+            </p>
           </motion.div>
         </div>
       </motion.section>
@@ -208,14 +209,28 @@ const Home = () => {
               </motion.div>
 
               <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-                {relevantAttractions.map((attraction, index) => (
-                  <AttractionCard
-                    key={attraction.id}
-                    attraction={attraction}
-                    index={index}
-                  />
-                ))}
+                {(showAll ? relevantAttractions : relevantAttractions.slice(0, 9)).map(
+                  (attraction, index) => (
+                    <AttractionCard
+                      key={attraction.id}
+                      attraction={attraction}
+                      index={index}
+                    />
+                  )
+                )}
               </div>
+
+              {/* See More / See Less button */}
+              {relevantAttractions.length > 9 && (
+                <div className="flex justify-center mt-6">
+                  <button
+                    onClick={() => setShowAll(!showAll)}
+                    className="px-6 py-2 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition"
+                  >
+                    {showAll ? "See Less" : "See More"}
+                  </button>
+                </div>
+              )}
 
               {relevantAttractions.length === 0 && showPath && (
                 <motion.div
