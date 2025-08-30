@@ -3,7 +3,8 @@ import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FiSun, FiMoon, FiMenu, FiX, FiNavigation } from 'react-icons/fi'
 import { useTheme } from '../contexts/ThemeContext'
-import logo from '/metrologo.svg'
+// import logo from '/metrologo.svg'
+import logo from '../../public/mlogo.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -34,7 +35,7 @@ const Navbar = () => {
             <img
               src={logo}
               alt="MetroGuide Logo"
-              className="h-12 w-12 md:h-14 md:w-14 object-contain"
+              className="h-16 w-16 md:h-20 md:w-20 object-contain -ml-4"
             />
             <span className="text-xl font-bold bg-gradient-to-r from-red-400 via-red-600 to-red-500 bg-clip-text text-transparent">
               MetroGuide

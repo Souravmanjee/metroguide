@@ -6,7 +6,8 @@ import PathResult from '../components/PathResult';
 import AttractionCard from '../components/AttractionCard';
 import { findShortestPath } from '../data/metroData';
 import { kolkataAttractions, getAttractionsNearStations } from '../data/attractions';
-import logo from '/metrologo.svg';
+// import logo from '/metrologo.svg';
+import logo from '../../public/mlogo.png';
 
 const Home = () => {
   const [source, setSource] = useState('');
@@ -83,11 +84,11 @@ const Home = () => {
             transition={{ delay: 0.2 }}
             className="mb-8"
           >
-            <div className="inline-flex items-center justify-center w-24 h-24 rounded-full mb-6">
+            <div className="inline-flex items-center justify-center w-38 h-38 rounded-full mt-0 mb-4">
               <img
                 src={logo}
                 alt="MetroGuide Logo"
-                className="h-20 w-20 md:h-24 md:w-24 object-contain"
+                className="h-36 w-42 md:h-38 md:w-42 object-contain"
               />
             </div>
 
@@ -102,7 +103,7 @@ const Home = () => {
               style={{ fontFamily: "'Caveat', cursive" }}
             >
               Your smart companion for navigating Kolkata's metro system.
-              <span className="relative z-10 text-blue-500"> the shortest routes </span> 
+              <span className="relative z-10 text-blue-500"> The shortest routes </span> 
               <span>and </span>
               {/* Premium underline: discover amazing places along the way */}
               <span className="relative inline-block">

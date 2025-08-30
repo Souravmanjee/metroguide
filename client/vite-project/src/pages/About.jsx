@@ -105,6 +105,21 @@ const About = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             <span className="relative z-10 bg-gradient-to-r from-red-400 via-red-600 to-red-500 to-gray-500 bg-clip-text text-transparent">About MetroGuide</span>
           </h1>
+
+{/* <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+  <span className="relative z-10 bg-gradient-to-r from-red-400 via-red-600 to-red-500 bg-clip-text text-transparent">
+    About
+  </span>
+  {" "}
+  <span
+    className="bg-gradient-to-r from-orange-400 via-orange-500 to-red-600 bg-clip-text text-transparent"
+    style={{ fontFamily: "'Caveat', cursive" }}
+  >
+    MetroGuide
+  </span>
+</h1> */}
+
+
           <p className=" text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-bold"
              style={{fontFamily: "'Nothing You Could Do', cursive"}}
              >
@@ -121,8 +136,8 @@ const About = () => {
         >
           <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Our Mission</h2>
-            <p className="text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed font-bold"
-              style={{fontFamily: "'Nothing You Could Do', cursive"}}
+            <p className="text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed"
+              // style={{fontFamily: "'Nothing You Could Do', cursive"}}
               >
                MetroGuide was created to simplify metro travel in Kolkata by <span className="relative z-10 text-orange-500">providing accurate route information</span>,
               <span className="relative z-10 text-orange-500">real-time pathfinding</span>, and <span className="relative z-10 text-orange-500">local attraction recommendations</span>. We believe that public transportation
