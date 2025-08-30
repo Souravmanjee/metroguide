@@ -95,13 +95,13 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center justify-center w-24 h-24 rounded-full mb-6">
+          {/* <div className="inline-flex items-center justify-center w-24 h-24 rounded-full mb-6">
             <img
               src={logo}
               alt="MetroGuide Logo"
               className="h-20 w-20 md:h-24 md:w-24 object-contain"
             />
-          </div>
+          </div> */}
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             <span className="relative z-10 bg-gradient-to-r from-red-400 via-red-600 to-red-500 to-gray-500 bg-clip-text text-transparent">About MetroGuide</span>
           </h1>
