@@ -14,7 +14,7 @@ export const kolkataAttractions = [
     name: "Fort William",
     description: "Historic British fort built in 1696, now headquarters of the Eastern Command of Indian Army",
     nearbyStations: ["Maidan", "Esplanade"],
-    image: "https://en.banglapedia.org/images/5/59/FortWilliamKolkata.jpg",
+    image: "https://static.toiimg.com/photo/77737169/Fortwilliam1828.jpg?width=748&resize=4",
     category: "Historical"
   },
   {
